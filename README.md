@@ -1,5 +1,7 @@
 # Ecommerce dbt Transforms
 
+[![CI](https://github.com/ruthwiksai9/ecommerce-dbt-transforms/actions/workflows/ci.yml/badge.svg)](https://github.com/ruthwiksai9/ecommerce-dbt-transforms/actions/workflows/ci.yml)
+
 dbt transformation layer for the [ecommerce-etl-pipeline](https://github.com/ruthwiksai9/ecommerce-etl-pipeline) PostgreSQL warehouse. Transforms raw Olist e-commerce data through staging → intermediate → mart layers.
 
 ## Lineage
