@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: revenue_daily
+    description: "Daily revenue summary for delivered orders"
+    columns:
+      - name: report_date
+        tests:
+          - unique
+          - not_null
+      - name: gross_revenue
+        tests:
+          - not_null
+
+  - name: customer_cohorts
+    description: "Monthly cohort retention matrix — rows per cohort x activity month"
+    columns:
+      - name: cohort_month
+        tests:
+          - not_null
+      - name: activity_month
+        tests:
+          - not_null
+      - name: retention_rate
+        tests:
+          - not_null
+
+  - name: category_performance
+    description: "Monthly product category revenue and unit performance"
+    columns:
+      - name: report_month
+        tests:
+          - not_null
+      - name: category_name
+        tests:
+          - not_null
